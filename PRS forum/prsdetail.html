@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punk Rock Settler's Forum</title>
+        <link rel="stylesheet" href="prsstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           <div class="navbar">
+                <nav class ="navigation hide" id="navigation">
+                    <ul class="nav-list">
+                        <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                        <li class="nav-item">
+                            <a href="/PRS forum/prshome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Detail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Pending</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+                <div class="brand">Punk Rock Settler's</div>
+           </div> 
+           <!--Search Box-->
+           <div class="search-box">
+                <select name="" id="">
+                    <option value="everything">Everything</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search...">
+                <button><i class="fa fa-search"></i></button>
+           </div>
+        </header>
+
+        <div class="container">
+           
+            <div class="topic-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Topic: Post Title Here</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">Nakiato</a></div>
+                        <div>Role</div>
+                        <img src="/PRS forum/media/acurse.png" alt="The outrage">
+                        <div>Posts: <u>28</u></div>
+                        <div>Date joined: 23 Oct 2022</div>
+                    </div>
+
+                    <div class="content">
+                        Learning how to make a forum, probably ahead of schedule.
+                        <br>
+                        Testing the spacing.
+                        <br>
+                        <br>
+                        To see what looks like it's best to read.
+                        <br>
+                        <br>
+                        <hr>
+                        Regards Breakingb0x3s
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Comment input-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here"></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+            <!--Display Comments-->
+
+            <div class="comments-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Comments</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">boonjikente</a></div>
+                        <div>Role</div>
+                        <img src="data:image/jpeg;base64,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" alt="The outrage">
+                        <div>Posts: <u>28</u></div>
+                        <div>Date joined: 24 Oct 2022</div>
+                    </div>
+
+                    <div class="content">
+                        Learning how to make a forum, probably ahead of schedule.
+                        <br>
+                        And it's going to be waaay more show than function so I'll have to find 
+                        more info to make this thing function correctly.
+                        <br>
+                        <hr>
+                        Regards boonjikente
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ..."></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+        <!--Multipages (pagination)-->
+            <div class="pagination">
+                pages: <a href="#">1</a>
+            </div>
+        </div>
+
+        </div>
+
+        <footer>
+            <span>&copy; &nbsp;Riley Robinson | This is just a project/template there are no rights.</span>
+        </footer>
+        <script src="/PRS forum/prsmain.js"></script>
+    </body>
+</html>
