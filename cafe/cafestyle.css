@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Helvetica;
+    opacity: 0.9;
+    color: seashell;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header and Nav*/
+
+.Teaheader{
+    display: flex;
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    z-index: 1;
+    padding: 0 10px;
+    border-bottom: 1px solid seashell;
+}
+
+.logo img{
+    max-height: 50px;
+}
+
+nav{
+    text-align: right;
+    font-size: 22px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+nav a{
+    padding: 10px;
+}
+
+/*Mission*/
+
+.mainbackground{
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url(/cafe/media/img-mission-background.jpg);
+    background-size: 1200px;
+}
+
+
+.missionstatement{
+    text-align: center;
+    padding: 10px;
+    width: 1200px;
+}
+
+/*body*/
+
+.teamonth{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.monthheader{
+    width: 1000px;
+    text-align: center;
+}
+
+.tea img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.tea{
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*Locations*/
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    width: 1200px;
+    background-image: url(/cafe/media/img-locations-background.jpg);
+    background-size: auto auto;
+}
+
+.locations h2{
+    width: 1200px;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.addr{
+    width: 300px;
+    padding: 40px;
+    line-height: 25px;
+    background-color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+/*Contact*/
+
+.contact h2{
+    width: 1000px;
+}
+
+.contact h5{
+    width: 1000px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+/*Footer*/
+
+footer{
+    margin-left: 20px;
+}
