@@ -59,8 +59,8 @@ h2{
 
 .mainGrid{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     width: 100%;
     max-width: 1200px;  /*Setting this max width keeps the image from zooming in more than desired*/
     height: 800px;
@@ -77,13 +77,19 @@ h2{
 .bluebox{
     opacity: 0.6;
     background-color: navy;
-    grid-area: 1 / 1 / span 6 / span 4;
+    grid-area: 1 / 1 / span 10 / span 4;
 }
 
 .pinkbox{
     opacity: 0.6;
     background-color:crimson;
-    grid-area: 3 / 1 / span 2 / span 7;
+    grid-area: 6 / 1 / span 2 / span 8;
+}
+
+.greenbox{
+    opacity: 0.6;
+    background-color: forestgreen;
+    grid-area: 1 / 5 / 2 / 9;
 }
 
 .Zune{
